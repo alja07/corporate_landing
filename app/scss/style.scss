@@ -4,5 +4,52 @@
 @import 'global';
 
 
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  &__top {
+    background-color: #303030;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    color: #B5B5B5;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: all .5s;
+  }
+
+  &__item+.menu__item {
+    margin-left: 48px;
+  }
+
+  &__item:hover {
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid #7B6C63;
+  }
+}
+
+
+
 
 @import 'media';
